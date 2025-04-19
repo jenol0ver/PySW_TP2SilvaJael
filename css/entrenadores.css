@@ -1,0 +1,123 @@
+.flip-card {
+  background-color: transparent;
+  width: 100%;
+  height: 400px;
+  max-width: 300px;
+  perspective: 1000px;
+  margin-left: auto;
+  margin-right: auto;
+}
+  
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s;
+  transform-style: preserve-3d;
+  cursor: pointer;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front {
+  background: linear-gradient(90deg, #CDA9C3, var(--bs-secondary));
+  color: #fff;
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 16px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+  padding: 20px;
+}
+  
+.flip-card-front img {
+  width: 10rem;
+  height: 10rem;
+  border-radius: 50%;
+  border: 4px solid var(--bs-primary);
+  object-fit: cover;
+  margin-bottom: 15px;
+}
+  
+.flip-card-front h3 {
+  font-weight: var(--font-weight-semibold);
+  color: var(--bs-light);
+}
+
+.flip-card-front p {
+  font-weight: var(--font-weight-normal);
+  color: var(--bs-light);
+  font-size: 1.2rem;
+}
+
+.badge-tipo{
+  background: transparent;
+  border: 2px solid var(--bs-light);
+  color: var(--bs-light);
+  padding: 10px 16px;
+  border-radius: 30px;
+  font-size: 1rem;
+  font-family: var(--font-family-secondary);
+  font-weight: var(--font-weight-semibold);
+}
+  
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+  
+/* Sistema de rating */
+.star-rating {
+  direction: ltr;
+  display: flex;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-top: 1.5rem;
+}
+
+.star-rating input[type="radio"] {
+  display: none;
+}
+
+.star-rating label {
+  font-size: 1.8rem;
+  color: #ccc;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  transform: scale(1);
+}
+
+/* Hover de izquierda a derecha con :has() */
+.star-rating label:has(~ label:hover),
+.star-rating label:hover {
+  color: #FFC107;
+  transform: scale(1.1);
+}
+
+/* Estrellas activas al hacer click */
+.star-rating input[type="radio"]:checked ~ label {
+  color: #FFD700;
+  transform: scale(1.1);
+}
+
+.rating-value {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  margin-top: 0.5rem;
+  font-size: 1.2rem;
+  color: #FFD700;
+  font-weight: bold;
+}
+
+.rating-value small {
+  color: #666;
+  font-size: 0.9rem;
+}
