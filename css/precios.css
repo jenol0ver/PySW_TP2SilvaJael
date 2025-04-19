@@ -1,0 +1,108 @@
+.card-precio {
+    border-radius: 1.5rem;
+    box-shadow: 0 2px 16px 0 rgba(80, 40, 120, 0.08), 0 1.5px 6px 0 rgba(80, 40, 120, 0.04);
+    transition: transform 0.2s, box-shadow 0.2s;
+    border: none;
+    background: #fff;
+    position: relative;
+    overflow: visible;
+    margin-bottom: 1.5rem;
+  }
+  
+  .card-precio:hover {
+    transform: translateY(-8px) scale(1.03);
+    box-shadow: 0 8px 32px 0 rgba(80, 40, 120, 0.15), 0 3px 12px 0 rgba(80, 40, 120, 0.08);
+    z-index: 2;
+  }
+  
+  .card-precio .fw-bold {
+    color: var(--bs-secondary);
+    font-weight: var(--font-weight-bold);
+  }
+  
+  .card-precio .precio {
+    color: var(--bs-tertiary);
+    font-size: 2.5rem;
+    font-weight: var(--font-weight-semibold);
+  }
+  
+  .badge-popular {
+    background: linear-gradient(90deg, var(--bs-tertiary), var(--bs-primary));
+    color: #fff;
+    font-weight: var(--font-weight-semibold);
+    font-size: 1rem;
+    top: -20px;
+    left: 50%;
+    transform: translate(-50%, 0);
+    box-shadow: 0 2px 8px rgba(80,40,120,0.12);
+    padding: 0.5rem 1.5rem;
+    border-radius: 2rem;
+    position: absolute;
+    z-index: 3;
+  }
+  
+  .card-precio ul {
+    padding-left: 0;
+  }
+  
+  .card-precio li {
+    margin-bottom: 0.5rem;
+    font-size: 1.07rem;
+  }
+
+h2 {
+    padding-bottom: 2rem;
+    font-weight: var(--font-weight-semibold);
+  }
+
+  /* Estilos para la tabla de comparación de planes */
+  .tabla-planes {
+    border-radius: 18px;
+    overflow: hidden;
+    background: var(--bs-primary);
+    box-shadow: 0 4px 24px 0 rgba(76,50,115,0.10);
+    margin-bottom: 0;
+    border: none
+  }
+  
+  .tabla-planes th, .tabla-planes td {
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1rem;
+    font-weight: var(--font-weight-semibold);
+    border: none;
+    padding: 1rem 0.2rem;
+  }
+  
+  .tabla-planes thead th {
+    background: var(--bs-primary);
+    color: #fff;
+    font-size: 1rem;
+    font-weight: var(--font-weight-bold);
+    border: none;
+    letter-spacing: 1px;
+  }
+  
+  .tabla-planes tbody th {
+    text-align: left;
+    color: var(--bs-secondary);
+    font-size: 1rem;
+    font-weight: var(--font-weight-semibold);
+    border-right: 1px solid #eee;
+  }
+  
+  .tabla-planes tbody tr {
+    background: #fff;
+    border-bottom: 1px solid #eee;
+    transition: background 0.2s;
+  }
+  
+  
+  .tabla-planes .fa-check {
+    font-size: 1rem;
+  }
+  
+  .tabla-planes .table-active {
+    background: rgba(194, 183, 210, 0.232) !important;
+    font-weight: var(--font-weight-semibold);
+  }
