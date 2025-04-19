@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Clases</title>
+    <!-- Estilos -->
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/styles.css">
+    <link rel="stylesheet" href="../css/clases.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+
+</head>
+<body>
+    <div class="container-fluid">
+        <!-- HEADER -->
+        <header>
+            <nav class="navbar navbar-expand-sm bs-light px-4 py-3">
+                <a class="navbar-brand" href="index.html">✨ AURAFIT</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                    <ul class="navbar-nav ms-auto align-items-center gap-3 menu">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="../index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item dropdown-custom position-relative">
+                            <button class="btn btn-primary toggle-submenu">Explorar ▾</button>
+                            <ul class="submenu">
+                                <li><a class="dropdown-item" href="clases.html">Clases</a></li>
+                                <li><a class="dropdown-item" href="precios.html">Precios</a></li>
+                                <li><a class="dropdown-item" href="entrenadores.html">Entrenadores</a></li>
+                                <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="../paginas/formulario.html">Contacto</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+
+        <main>
+            <!-- Banner de clases -->
+            <section class="banner">
+                <div class="banner-content">
+                    <h1>Nuestras Clases</h1>
+                    <p>Descubrí una amplia variedad de actividades para todos los niveles</p>
+                </div>
+            </section>
+
+            
+            <!-- Filtros de categorías -->
+            <section class="filtros-container">
+                <h2>Explorá nuestras clases</h2>
+                <!-- los botones -->
+                <div class="filtros mb-4 text-center row g-2 justify-content-center">
+                    <div class="col-12 col-sm-auto">
+                        <button class="btn btn-primary filtro-btn w-100" data-filtro="todas">Todas</button>
+                    </div>
+                    <div class="col-12 col-sm-auto">
+                        <button class="btn btn-outline-secondary filtro-btn w-100" data-filtro="pilates">Pilates</button>
+                    </div>
+                    <div class="col-12 col-sm-auto">
+                        <button class="btn btn-outline-secondary filtro-btn w-100" data-filtro="musculacion">Musculación</button>
+                    </div>
+                    <div class="col-12 col-sm-auto">
+                        <button class="btn btn-outline-secondary filtro-btn w-100" data-filtro="yoga">Yoga</button>
+                    </div>
+                    <div class="col-12 col-sm-auto">
+                        <button class="btn btn-outline-secondary filtro-btn w-100" data-filtro="crossfit">CrossFit</button>
+                    </div>
+                </div>
+            </section>
+
+            
+            
+            <!-- Galería -->
+            <div class="container px-2">
+            <div class="row" data-masonry='{"itemSelector": ".masonry-item", "percentPosition": true, "columnWidth": ".grid-sizer" }'>
+                <!-- Grid sizer -->
+                <div class="grid-sizer col-md-4"></div>
+  
+                <!-- CARD 1 -->
+                <div class="col-md-4 mb-4 masonry-item yoga">
+                    <div class="card card-hover">
+                        <img src="../assets/img/yoga1.jpg" class="card-img-top" alt="Entrenamiento de Fuerza">
+                        <div class="card-body">
+                            <h5 class="card-title">Entrenamiento de Fuerza</h5>
+                            <p class="card-text">Desarrollá tu fuerza y resistencia muscular</p>
+                            <span class="badge rounded-pill px-3 py-2">Yoga</span>
+                        </div>
+                        <div class="card-overlay h-100 w-100 d-flex p-3">
+                            <p class="m-0">¡Probá esta clase ahora!</p>
+                        </div>
+                    </div>
+                </div>
+  
+                <!-- CARD 2 -->
+                <div class="col-md-4 mb-4 masonry-item yoga">
+                    <div class="card card-hover">
+                        <img src="../assets/img/yoga2.jpg" class="card-img-top" alt="Entrenamiento de Fuerza">
+                        <div class="card-body">
+                            <h5 class="card-title">Entrenamiento de Fuerza</h5>
+                            <p class="card-text">Desarrollá tu fuerza y resistencia muscular</p>
+                            <span class="badge rounded-pill px-3 py-2">Yoga</span>
+                        </div>
+                        <div class="card-overlay h-100 w-100 d-flex p-3">
+                            <p class="m-0">¡Probá esta clase ahora!</p>
+                        </div>
+                    </div>
+                </div>
+  
+                <!-- CARD 3 -->
+                <div class="col-md-4 mb-4 masonry-item pilates">
+                    <div class="card card-hover">
+                        <img src="../assets/img/pilates.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Entrenamiento de Fuerza</h5>
+                            <p class="card-text">Desarrollá tu fuerza y resistencia muscular</p>
+                            <span class="badge rounded-pill px-3 py-2">Pilates</span>
+                        </div>
+                        <div class="card-overlay h-100 w-100 d-flex p-3">
+                            <p class="m-0">¡Probá esta clase ahora!</p>
+                        </div>
+                    </div>
+                </div>
+  
+                <!-- CARD 4 -->
+                <div class="col-md-4 mb-4 masonry-item pilates">
+                    <div class="card card-hover">
+                        <img src="../assets/img/pilates1.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Entrenamiento de Fuerza</h5>
+                            <p class="card-text">Desarrollá tu fuerza y resistencia muscular</p>
+                            <span class="badge rounded-pill px-3 py-2">Pilates</span>
+                        </div>
+                        <div class="card-overlay h-100 w-100 d-flex p-3">
+                            <p class="m-0">¡Probá esta clase ahora!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 5 -->
+                <div class="col-md-4 mb-4 masonry-item yoga">
+                    <div class="card card-hover">
+                        <img src="../assets/img/yoga.jpg" class="card-img-top" alt="Entrenamiento de Fuerza">
+                        <div class="card-body">
+                            <h5 class="card-title">Entrenamiento de Fuerza</h5>
+                            <p class="card-text">Desarrollá tu fuerza y resistencia muscular</p>
+                            <span class="badge rounded-pill px-3 py-2">Yoga</span>
+                        </div>
+                        <div class="card-overlay h-100 w-100 d-flex p-3">
+                            <p class="m-0">¡Probá esta clase ahora!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 6 -->
+                <div class="col-md-4 mb-4 masonry-item musculacion">
+                    <div class="card card-hover">
+                        <img src="../assets/img/cardio.jpg" class="card-img-top" alt="Entrenamiento de Fuerza">
+                        <div class="card-body">
+                            <h5 class="card-title">Entrenamiento de Fuerza</h5>
+                            <p class="card-text">Desarrollá tu fuerza y resistencia muscular</p>
+                            <span class="badge rounded-pill px-3 py-2">Musculación</span>
+                        </div>
+                        <div class="card-overlay h-100 w-100 d-flex p-3">
+                            <p class="m-0">¡Probá esta clase ahora!</p>
+                        </div>
+                    </div>
+                </div>
+  
+                <!-- CARD 4 -->
+                <div class="col-md-4 mb-4 masonry-item musculacion">
+                    <div class="card card-hover">
+                        <img src="../assets/img/musculacion1.jpg" class="card-img-top" alt="Entrenamiento de Fuerza">
+                        <div class="card-body">
+                            <h5 class="card-title">Entrenamiento de Fuerza</h5>
+                            <p class="card-text">Desarrollá tu fuerza y resistencia muscular</p>
+                            <span class="badge rounded-pill px-3 py-2">Musculación</span>
+                        </div>
+                        <div class="card-overlay h-100 w-100 d-flex p-3">
+                            <p class="m-0">¡Probá esta clase ahora!</p>
+                        </div>
+                    </div>
+                </div>
+  
+                <!-- CARD 5 -->
+                <div class="col-md-4 mb-4 masonry-item pilates">
+                    <div class="card card-hover">
+                        <img src="../assets/img/pilates2.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Entrenamiento de Fuerza</h5>
+                            <p class="card-text">Desarrollá tu fuerza y resistencia muscular</p>
+                            <span class="badge rounded-pill px-3 py-2">Pilates</span>
+                        </div>
+                        <div class="card-overlay h-100 w-100 d-flex p-3">
+                            <p class="m-0">¡Probá esta clase ahora!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 6 -->
+                <div class="col-md-4 mb-4 masonry-item crossfit">
+                    <div class="card card-hover">
+                        <img src="../assets/img/crossfit.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Entrenamiento de Fuerza</h5>
+                            <p class="card-text">Desarrollá tu fuerza y resistencia muscular</p>
+                            <span class="badge rounded-pill px-3 py-2">CrossFit</span>
+                        </div>
+                        <div class="card-overlay h-100 w-100 d-flex p-3">
+                            <p class="m-0">¡Probá esta clase ahora!</p>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- CARD 7 -->
+                <div class="col-md-4 mb-4 masonry-item crossfit">
+                    <div class="card card-hover">
+                        <img src="../assets/img/crossfit1.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Entrenamiento de Fuerza</h5>
+                            <p class="card-text">Desarrollá tu fuerza y resistencia muscular</p>
+                            <span class="badge rounded-pill px-3 py-2">CrossFit</span>
+                        </div>
+                        <div class="card-overlay h-100 w-100 d-flex p-3">
+                            <p class="m-0">¡Probá esta clase ahora!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 8 -->
+                <div class="col-md-4 mb-4 masonry-item musculacion">
+                    <div class="card card-hover">
+                        <img src="../assets/img/musculacion2.jpg" class="card-img-top" alt="Entrenamiento de Fuerza">
+                        <div class="card-body">
+                            <h5 class="card-title">Entrenamiento de Fuerza</h5>
+                            <p class="card-text">Desarrollá tu fuerza y resistencia muscular</p>
+                            <span class="badge rounded-pill px-3 py-2">Musculación</span>
+                        </div>
+                        <div class="card-overlay h-100 w-100 d-flex p-3">
+                            <p class="m-0">¡Probá esta clase ahora!</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CARD 9 -->
+                <div class="col-md-4 mb-4 masonry-item crossfit">
+                    <div class="card card-hover">
+                        <img src="../assets/img/crossfit2.jpg" class="card-img-top">
+                        <div class="card-body">
+                            <h5 class="card-title">Entrenamiento de Fuerza</h5>
+                            <p class="card-text">Desarrollá tu fuerza y resistencia muscular</p>
+                            <span class="badge rounded-pill px-3 py-2">CrossFit</span>
+                        </div>
+                        <div class="card-overlay h-100 w-100 d-flex p-3">
+                            <p class="m-0">¡Probá esta clase ahora!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Sección de Horarios -->
+            <section class="horarios-section py-5">
+                <div class="container">
+                    <h2 class="text-center mb-4">Horarios Semanales</h2>
+                    <div class="table-responsive">
+                        <table class="table table-bordered table-hover horarios-table">
+                            <thead class="table-secondary">
+                                <tr>
+                                    <th>Hora</th>
+                                    <th>Lunes</th>
+                                    <th>Martes</th>
+                                    <th>Miércoles</th>
+                                    <th>Jueves</th>
+                                    <th>Viernes</th>
+                                    <th>Sábado</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>06:00 - 07:00</td>
+                                    <td>Pilates</td>
+                                    <td>Yoga</td>
+                                    <td>Pilates</td>
+                                    <td>Yoga</td>
+                                    <td>Pilates</td>
+                                    <td>Yoga</td>
+                                </tr>
+                                <tr>
+                                    <td>07:00 - 08:00</td>
+                                    <td>Musculación</td>
+                                    <td>CrossFit</td>
+                                    <td>Musculación</td>
+                                    <td>CrossFit</td>
+                                    <td>Musculación</td>
+                                    <td>CrossFit</td>
+                                </tr>
+                                <tr>
+                                    <td>08:00 - 09:00</td>
+                                    <td>Yoga</td>
+                                    <td>Pilates</td>
+                                    <td>Yoga</td>
+                                    <td>Pilates</td>
+                                    <td>Yoga</td>
+                                    <td>Pilates</td>
+                                </tr>
+                                <tr>
+                                    <td>18:00 - 19:00</td>
+                                    <td>CrossFit</td>
+                                    <td>Musculación</td>
+                                    <td>CrossFit</td>
+                                    <td>Musculación</td>
+                                    <td>CrossFit</td>
+                                    <td>Musculación</td>
+                                </tr>
+                                <tr>
+                                    <td>19:00 - 20:00</td>
+                                    <td>Pilates</td>
+                                    <td>Yoga</td>
+                                    <td>Pilates</td>
+                                    <td>Yoga</td>
+                                    <td>Pilates</td>
+                                    <td>Yoga</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <!-- FOOTER -->
+        <footer class="footer mt-5">
+            <div class="footer-content container py-5">
+                <div class="row">
+                    <div class="col-md-4 footer-section newsletter ">
+                        <h3>Suscribíte a nuestro Newsletter</h3>
+                        <p>Recibí las últimas novedades y promociones directo en tu email</p>
+                        <form class="suscripcion-form d-flex gap-2">
+                            <input type="email" placeholder="Tu email" class="form-control" required>
+                            <button type="submit" class="btn submit-btn d-flex align-items-center">
+                                <span class="spinner-border spinner-border-sm d-none" role="status"></span>
+                                <span class="ms-2">Suscribirse</span>
+                            </button>
+                          </form>
+                    </div>
+                    <div class="col-md-4 footer-section redes-sociales">
+                        <h3 class="text-center">Seguínos</h3>
+                        <div class="redes-container d-flex gap-3 justify-content-center">
+                            <a href="#" class="red-social instagram text-white">
+                                <i class="fab fa-instagram fs-3"></i>
+                            </a>
+                            <a href="#" class="red-social facebook text-white">
+                                <i class="fab fa-facebook fs-3"></i>
+                            </a>
+                            <a href="#" class="red-social twitter text-white">
+                                <i class="fab fa-twitter fs-3"></i>
+                            </a>
+                            <a href="#" class="red-social youtube text-white">
+                                <i class="fab fa-youtube fs-3"></i>
+                            </a>
+                         </div>
+                     </div>
+                    <div class="col-md-4 footer-section ubicacion">
+                        <h3>Ubicación</h3>
+                        <div class="mapa-container">
+                            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58208.083608909845!2d-65.32830885136714!3d-24.241596000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b07c6fd09967f%3A0x1e01ac73747ca436!2sVALHALLA%20GYM!5e0!3m2!1ses!2sar!4v1745027440703!5m2!1ses!2sar" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        </div>
+                    </div>
+                </div>
+                <div class="border-top mt-4 pt-4 text-center">
+                    <p>&copy; 2025 AuraFit. Todos los derechos reservados.</p>
+                </div>
+            </div>
+         </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/64d51e4daf.js" crossorigin="anonymous"></script>
+    <script src="../js/submenu.js"></script>
+    <script src="../js/clases.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+    <script src="https://unpkg.com/imagesloaded@5/imagesloaded.pkgd.min.js"></script>
+</body>
+</html>

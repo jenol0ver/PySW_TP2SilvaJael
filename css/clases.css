@@ -1,0 +1,113 @@
+/* Filtros de categorías */
+.filtros-container {
+    margin: 60px auto;
+    padding: 0 20px;
+  }
+  
+  .filtros-container h2 {
+    text-align: center;
+    color: var(--bs-secondary);
+    margin-bottom: 30px;
+    font-size: 2rem;
+    
+  }
+  
+  .filtros {
+    justify-content: center;
+    margin-bottom: 4rem;
+    padding: 1.5rem 0;
+    display: flex;
+    gap: 1rem;
+  }
+  
+  .filtro-btn {
+    border: 2px solid transparent;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    font-size: 1.5rem;
+    color: var(--bs-secondary);
+    padding: 0.75rem 1.5rem;
+  }
+  
+  .filtro-btn:hover {
+    background: var(--bs-secondary);
+    color: #fff;
+    border: none;
+  }
+  
+  
+  /* Galería clases tipo MASONRY */
+  .masonry-item .card-img-top {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .grid-sizer {
+    width: 33.3333%; /* igual que col-md-4 */
+  }
+  
+  
+  .card-hover .card-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: rgba(76, 50, 115, 0.549);
+    opacity: 0;
+    transition: opacity 0.3s;
+    z-index: 2;
+    pointer-events: none;
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .card-hover:hover .card-overlay {
+    pointer-events: auto;
+    opacity: 1;
+  }
+  
+  .card-hover:hover {
+    transform: scale(1.03);
+  }
+  
+  .badge {
+    background-color: var(--bs-primary);
+  }
+  
+  /* Estilos para la tabla de horarios */
+  .horarios-table {
+    border-radius: 16px;
+    overflow: hidden;
+    background: var(--bs-light);
+  }
+  
+  .horarios-table th, .horarios-table td {
+    text-align: center;
+    vertical-align: middle;
+    font-weight: 500;
+  }
+  
+  .horarios-table thead th {
+    background: var(--bs-secondary) ;
+    color: #fff;
+    border: none;
+    font-size: 1rem;
+  }
+  
+  .horarios-table tbody tr {
+    background: #fff;
+    border-bottom: 1px solid #eee;
+  }
+  
+  .horarios-table tbody tr:nth-child(even) {
+    background: var(--bs-light);
+  }
+  
+  .horarios-table {
+    box-shadow: 0 4px 16px 0 rgba(76,50,115,0.07);
+  }
+  

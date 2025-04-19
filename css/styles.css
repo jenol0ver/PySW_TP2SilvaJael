@@ -329,3 +329,24 @@ header {
     border: none;
     border-radius: 0.5rem;
   }
+
+/* Banner */
+.banner {
+  background: linear-gradient(rgba(76, 50, 115, 0.8), rgba(76, 50, 115, 0.8)), url('../assets/img/banner-clases.jpg');
+  background-size: cover;
+  background-position: center;
+  color: #fff;
+  text-align: center;
+  padding: 100px 20px;
+}
+
+.banner-content h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  font-weight: 700;
+}
+
+.banner-content p {
+  font-size: 18px;
+  margin-bottom: 0;
+}
