@@ -351,3 +351,11 @@ header {
   font-size: 18px;
   margin-bottom: 0;
 }
+
+/* Mejora de accesibilidad: focus visible para todos los elementos interactivos */
+a:focus, button:focus, .form-control:focus, [tabindex]:focus {
+  outline: 2px solid var(--bs-primary, #0d6efd);
+  outline-offset: 2px;
+  box-shadow: 0 0 0 2px rgba(13,110,253,0.25);
+  transition: box-shadow 0.2s;
+}
