@@ -1,0 +1,69 @@
+
+  /* Filtros de categorías */
+.filtros-container {
+    margin: 60px auto;
+    padding: 0 20px;
+  }
+
+.filtros {
+     justify-content: center;
+    margin-bottom: 4rem;
+    padding: 1.5rem 0;
+    display: flex;
+    gap: 1rem;
+}
+  
+.filtro-btn {
+    border: 2px solid transparent;
+    border-radius: 2rem;
+    cursor: pointer;
+    font-weight: 500;
+    transition: all 0.3s ease;
+    font-size: 1.5rem;
+    color: var(--bs-secondary);
+    padding: 0.75rem 1.5rem;
+}
+
+.filtro-btn:hover {
+    background: var(--bs-secondary);
+    color: #fff;
+    border: none;
+}
+
+/* Avatares con pseudo-elemento */
+.comment .avatar {
+    width: 40px;
+    height: 40px;
+    background: #eee;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    color: #555;
+    font-size: 1.3rem;
+}
+
+
+
+/* Comentario destacado */
+.comment.highlight {
+    background: var(--bs-light);
+    border-left: 4px solid var(--bs-primary);
+    padding-left: 8px;
+    border-radius: 4px;
+}
+
+.form-respuesta {
+    width: 300px;
+    margin-bottom: 1rem;
+}
+
+.form-respuesta input {
+    font-size: 1rem;
+}
+
+.form-respuesta button {
+    width: 100%;
+    font-weight: 500;
+}
