@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>AuraFit</title>
+  <!-- Custom Styles -->
+  <link rel="stylesheet" href="../css/bootstrap.min.css" />
+  <link rel="stylesheet" href="../css/styles.css" />
+  <link rel="stylesheet" href="../css/blog.css" />
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css"/>
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;600;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container-fluid">
+    <!-- HEADER -->
+    <header>
+        <nav class="navbar navbar-expand-sm bs-light px-4 py-3">
+            <div class="container-fluid">
+            <a class="navbar-brand" href="#">✨ AURAFIT</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+                <ul class="navbar-nav ms-auto align-items-center gap-3 menu">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Inicio</a>
+                </li>
+                <li class="nav-item dropdown-custom position-relative">
+                    <button class="btn btn-primary toggle-submenu">Explorar ▾</button>
+                    <ul class="submenu" >
+                    <li><a class="dropdown-item" href="clases.html">Clases</a></li>
+                    <li><a class="dropdown-item" href="precios.html">Precios</a></li>
+                    <li><a class="dropdown-item" href="entrenadores.html">Entrenadores</a></li>
+                    <li><a class="dropdown-item" href="blog.html">Blog</a></li>
+                    </ul>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+                </ul>
+            </div>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- Banner de Entrenadores -->
+        <section class="banner">
+            <div class="banner-content">
+                <h1>Nuestro Blog</h1>
+                <p>Descubrí novedades y consejos para una vida saludable</p>
+            </div>
+        </section>
+
+        <!-- Filtros por tags -->
+        <section class="container my-4">
+            <section class="filtros-container">
+                <!-- los botones -->
+                <div class="filtros mb-4 text-center row g-2 justify-content-center">
+                    <div class="col-12 col-sm-auto">
+                        <button class="btn btn-primary filtro-btn w-100" data-filtro="todas">Todas</button>
+                    </div>
+                    <div class="col-12 col-sm-auto">
+                        <button class="btn btn-outline-secondary filtro-btn w-100" data-filtro="nutricion">Nutrición</button>
+                    </div>
+                    <div class="col-12 col-sm-auto">
+                        <button class="btn btn-outline-secondary filtro-btn w-100" data-filtro="entrenamiento">Entrenamiento</button>
+                    </div>
+                    <div class="col-12 col-sm-auto">
+                        <button class="btn btn-outline-secondary filtro-btn w-100" data-filtro="salud">Salud</button>
+                    </div>
+                </div>
+            </section>
+            <!-- Grid de artículos -->
+            <div class="row g-4" id="blogGrid">
+            
+               <!-- Artículo 1 -->
+            <div class="col-md-6 col-lg-4 blog-article" data-tags="nutricion" data-aos="fade-up">
+                <div class="card h-100">
+                <img src="../assets/img/proteina.jpg" class="card-img-top" alt="Nutrición">
+                <div class="card-body">
+                    <span class="badge bg-success mb-2">Nutrición</span>
+                    <h5 class="card-title">5 Superalimentos para tu rutina</h5>
+                    <p class="card-text">Descubre cómo estos alimentos potencian tu rendimiento y salud.</p>
+                </div>
+                <div class="card-footer bg-white border-0">
+                    <!-- Comentarios -->
+                    <div class="comments">
+                    <div class="comment mb-2 d-flex align-items-center">
+                        <div class="avatar me-2"></div>
+                        <div>
+                        <span class="fw-semibold">Ana</span>
+                        <span class="text-muted small ms-1">Hace 2h</span>
+                        <div>¡Excelente info!</div>
+                        <button class="btn btn-link btn-sm reply-btn">Responder</button>
+                        <button class="btn btn-link btn-sm highlight-btn">Destacar</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- Artículo 2 -->
+            <div class="col-md-6 col-lg-4 blog-article" data-tags="entrenamiento" data-aos="fade-up">
+                <div class="card h-100">
+                <img src="../assets/img/cardio.jpg" class="card-img-top" alt="Entrenamiento">
+                <div class="card-body">
+                    <span class="badge bg-warning mb-2">Entrenamiento</span>
+                    <h5 class="card-title">Cardio Intensivo: Mejora tu Rendimiento</h5>
+                    <p class="card-text">Técnicas avanzadas de entrenamiento cardiovascular para optimizar tu rendimiento.</p>
+                </div>
+                <div class="card-footer bg-white border-0">
+                    <div class="comments">
+                    <div class="comment mb-2 d-flex align-items-center">
+                        <div class="avatar me-2"></div>
+                        <div>
+                        <span class="fw-semibold">Luis</span>
+                        <span class="text-muted small ms-1">Hace 1h</span>
+                        <div>¡Me funcionó genial!</div>
+                        <button class="btn btn-link btn-sm reply-btn">Responder</button>
+                        <button class="btn btn-link btn-sm highlight-btn">Destacar</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+            <!-- Artículo 3 -->
+            <div class="col-md-6 col-lg-4 blog-article" data-tags="salud" data-aos="fade-up">
+                <div class="card h-100">
+                <img src="../assets/img/meditacion.jpg" class="card-img-top" alt="Salud">
+                <div class="card-body">
+                    <span class="badge bg-primary text-white mb-2">Salud</span>
+                    <h5 class="card-title">Importancia del descanso</h5>
+                    <p class="card-text">Dormir bien es clave para tu progreso físico y mental.</p>
+                </div>
+                <div class="card-footer bg-white border-0">
+                    <div class="comments">
+                    <div class="comment mb-2 d-flex align-items-center">
+                        <div class="avatar me-2"></div>
+                        <div>
+                        <span class="fw-semibold">Sofi</span>
+                        <span class="text-muted small ms-1">Hace 3h</span>
+                        <div>¡Lo necesitaba leer!</div>
+                        <button class="btn btn-link btn-sm reply-btn">Responder</button>
+                        <button class="btn btn-link btn-sm highlight-btn">Destacar</button>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                </div>
+            </div>
+
+            <!-- Artículo 1 -->
+            <div class="col-md-6 col-lg-4 blog-article" data-tags="nutricion" data-aos="fade-up">
+                <div class="card h-100">
+                    <img src="../assets/img/proteinas.jpg" class="card-img-top" alt="Nutrición">
+                    <div class="card-body">
+                        <span class="badge bg-success mb-2">Nutrición</span>
+                        <h5 class="card-title">Proteínas Esenciales: Tu Guía Definitiva</h5>
+                        <p class="card-text">Todo lo que necesitas saber sobre las proteínas y su importancia en tu dieta.</p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <!-- Comentarios -->
+                        <div class="comments">
+                        <div class="comment mb-2 d-flex align-items-center">
+                            <div class="avatar me-2"></div>
+                            <div>
+                            <span class="fw-semibold">Ana</span>
+                            <span class="text-muted small ms-1">Hace 2h</span>
+                            <div>¡Excelente info!</div>
+                            <button class="btn btn-link btn-sm reply-btn">Responder</button>
+                            <button class="btn btn-link btn-sm highlight-btn">Destacar</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- Artículo 2 -->
+                <div class="col-md-6 col-lg-4 blog-article" data-tags="salud" data-aos="fade-up">
+                    <div class="card h-100">
+                    <img src="../assets/img/yoga.jpg" class="card-img-top" alt="Entrenamiento">
+                    <div class="card-body">
+                        <span class="badge bg-primary mb-2">salud</span>
+                        <h5 class="card-title">Meditación y Bienestar: La Conexión Perfecta</h5>
+                        <p class="card-text">Descubre cómo la meditación puede mejorar tu bienestar físico y mental.</p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <div class="comments">
+                        <div class="comment mb-2 d-flex align-items-center">
+                            <div class="avatar me-2"></div>
+                            <div>
+                            <span class="fw-semibold">Luis</span>
+                            <span class="text-muted small ms-1">Hace 1h</span>
+                            <div>¡Me funcionó genial!</div>
+                            <button class="btn btn-link btn-sm reply-btn">Responder</button>
+                            <button class="btn btn-link btn-sm highlight-btn">Destacar</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <!-- Artículo 3 -->
+                <div class="col-md-6 col-lg-4 blog-article" data-tags="entrenamiento" data-aos="fade-up">
+                    <div class="card h-100">
+                    <img src="../assets/img/entrenamiento.jpg" class="card-img-top" alt="Entrenamiento">
+                    <div class="card-body">
+                        <span class="badge bg-warning text-white mb-2">Entrenamiento</span>
+                        <h5 class="card-title">Rutina HIIT para quemar grasa</h5>
+                        <p class="card-text">Entrena en poco tiempo y maximiza resultados con HIIT.</p>
+                    </div>
+                    <div class="card-footer bg-white border-0">
+                        <div class="comments">
+                        <div class="comment mb-2 d-flex align-items-center">
+                            <div class="avatar me-2"></div>
+                            <div>
+                            <span class="fw-semibold">Sofi</span>
+                            <span class="text-muted small ms-1">Hace 3h</span>
+                            <div>¡Lo necesitaba leer!</div>
+                            <button class="btn btn-link btn-sm reply-btn">Responder</button>
+                            <button class="btn btn-link btn-sm highlight-btn">Destacar</button>
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+
+            </div>
+        </section>
+
+
+    </main>
+    <!-- FOOTER -->
+    <footer class="footer mt-5">
+        <div class="footer-content container py-5">
+            <div class="row">
+            <div class="col-md-4 footer-section newsletter ">
+                <h3>Suscribíte a nuestro Newsletter</h3>
+                <p>Recibí las últimas novedades y promociones directo en tu email</p>
+                <form class="suscripcion-form d-flex gap-2">
+                <input type="email" placeholder="Tu email" class="form-control" required>
+                <button type="submit" class="btn submit-btn d-flex align-items-center">
+                    <span class="spinner-border spinner-border-sm d-none" role="status"></span>
+                    <span class="ms-2">Suscribirse</span>
+                </button>
+                </form>
+            </div>
+            <div class="col-md-4 footer-section redes-sociales">
+                <h3 class="text-center">Seguínos</h3>
+                <div class="redes-container d-flex gap-3 justify-content-center">
+                <a href="#" class="red-social instagram text-white">
+                    <i class="fab fa-instagram fs-3"></i>
+                </a>
+                <a href="#" class="red-social facebook text-white">
+                    <i class="fab fa-facebook fs-3"></i>
+                </a>
+                <a href="#" class="red-social twitter text-white">
+                    <i class="fab fa-twitter fs-3"></i>
+                </a>
+                <a href="#" class="red-social youtube text-white">
+                    <i class="fab fa-youtube fs-3"></i>
+                </a>
+                </div>
+            </div>
+            <div class="col-md-4 footer-section ubicacion">
+                <h3>Encontranos en:</h3>
+                <div class="mapa-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58208.083608909845!2d-65.32830885136714!3d-24.241596000000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x941b07c6fd09967f%3A0x1e01ac73747ca436!2sVALHALLA%20GYM!5e0!3m2!1ses!2sar!4v1745027440703!5m2!1ses!2sar" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+            </div>
+            </div>
+            <div class="border-top mt-4 pt-4 text-center">
+            <p>&copy; 2025 AuraFit. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://kit.fontawesome.com/64d51e4daf.js" crossorigin="anonymous"></script>
+    <script src="../js/blog.js"></script>
+    <script src="../js/submenu.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+</body>
+</html>
